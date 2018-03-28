@@ -231,8 +231,8 @@ module.exports = function(grunt) {
 			md5.update(JSON.stringify(o));
 
 			// grunt-webfont version
-			var packageJson = require('../package.json');
-			md5.update(packageJson.version);
+			var version = '1.7.2';
+			md5.update(version);
 
 			// Templates
 			if (o.template) {
